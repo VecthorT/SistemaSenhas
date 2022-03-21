@@ -1,0 +1,138 @@
+/* 
+2D7A80
+A6F9FF
+58F4FF
+537D80
+47C3CC
+FFE540 Amarelinho
+
+ */
+
+body{
+    background: white;
+    color: white;
+    font-family: 'Montserrat'
+}
+.container{
+    background:#555555;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "sidenav content"
+                        "sidenav footer";
+
+}
+.tela-chamada{
+    grid-area: sidenav;
+}
+.config{
+    grid-area: content;
+}
+.info{
+    grid-area: footer;
+}
+div.tela-chamada{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: #2D7A80;
+    border-radius: 15px;
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+}
+div.config{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    background: #2D7A80;
+    border-radius: 15px;
+    height: 100px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+div.info{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background: #2D7A80;
+    border-radius: 15px;
+    height: 100px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 100%;
+    max-width: 300px;
+    margin: 50px auto;
+    text-align: center;
+}
+.text-chamada{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+.num-chamada{
+    font-size: 5em;
+    margin-top: 100px;
+    font-weight: bolder;
+}
+.btn-senha{
+    margin: 100px auto;
+    background: #58F4FF;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: #555555;
+    font-size: 0.9em;
+    font-weight: bold;
+    width: 100%;
+    max-width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    
+}
+#btn-pref{
+    background: #FFE540;
+}
+#btn-com{
+    background: #4DFFA7;
+}
+#btn-pref:hover, #btn-com:hover{
+    
+    background: #b5b6b6;
+    transition: 0.5s;
+}
+.botoes, .config{
+    /* background: #555555; */
+    width: 100%;
+    max-width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+}
+.btn-config{
+    margin: 100px auto;
+    background: #58F4FF;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: #555555;
+    font-size: 0.7em;
+    font-weight: bold;
+    width: 100%;
+    max-width: 120px;
+    height: 50px;
+    border-radius: 10px;
+}
